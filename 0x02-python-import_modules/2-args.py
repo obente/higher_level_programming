@@ -7,7 +7,7 @@ def main():
     elif len(argv) == 2:
         print(len(argv) - 1, "argument:")
     else:
-        print(len(argv) - 1,"arguments:")
+        print(len(argv) - 1, "arguments:")
 
     for i in range(1, len(argv)):
         print("{}: {}".format(i, argv[i]))

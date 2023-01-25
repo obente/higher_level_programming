@@ -7,7 +7,7 @@ class Square:
     """ Square class which does nothing """
     def __init__(self, size=0):
         """ Initialize square """
-        if size not instanceof(int):
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")

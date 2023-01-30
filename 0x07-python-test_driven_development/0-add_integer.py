@@ -5,8 +5,7 @@ def add_integer(a, b=98):
     
     """ Raises a Typeerror if values passed is not an int or float"""
     if type(a) not in (int, float):
-        raise TypeError("You didnt enter an integer or float")
+        raise TypeError("a must be an integer")
     if type(b) not in (int, float):
-        raise TypeError("{} not an integer or float".format(b))
+        raise TypeError("b must be an integer")
     return int(a) + int(b)
-

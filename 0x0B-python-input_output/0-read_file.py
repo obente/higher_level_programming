@@ -4,7 +4,7 @@
 
 def read_file(filename=""):
     """ Read a file and print to stdout
-    
+
     Keyword argumwnts
     filename - file to be read (defaults to empty string
     """

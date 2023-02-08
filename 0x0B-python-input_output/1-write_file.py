@@ -10,4 +10,4 @@ def read_file(filename="", text=""):
     text - string content to write (defaults to empty string)
     """
     with open(filename, text, encoding="utf-8") as f:
-        print(f.write(), end="")
+        return (f.write(text))

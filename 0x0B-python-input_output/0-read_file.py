@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Function to read UTF* textfile"""
+
 
 def read_file(filename=""):
     """ Read a file and print to stdout

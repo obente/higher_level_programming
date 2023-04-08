@@ -1,0 +1,58 @@
+====================
+Divide a matrix
+====================
+
+This function divides a matrix and returns the divided matrix
+
+Usage
+=====
+
+``matrix_divided(matrix, div)`` returns a copy matrix with all elements
+divided by ``div``
+
+::
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix = [[0, 2, 6], [12, 16, 20]]
+    >>> print(matrix_divided(matrix, 2))
+    [[0.0, 1.0, 3.0], [6.0, 8.0, 10.0]]
+
+::
+
+    >>> print(matrix_divided([[1,2,3],[3,2,1]], 0))
+    Traceback (most recent call last):
+        ...
+    ZeroDivisionError: division by zero
+
+
+::
+
+Test that list contains only integers or float type
+===================================================
+
+    >>> print(matrix_divided([[1,2,3],[3,2,'g']],2))
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+::
+
+Test that the divisor is a number (int/float)
+=============================================
+
+    >>> print(matrix_divided(matrix,'4'))
+    Traceback (most recent call last):
+        ...
+    TypeError: div must be a number
+
+::
+
+Test matrix row is equal
+========================
+
+    >>> print(matrix_divided([[1,2,3],[1,2]],3))
+    Traceback (most recent call last):
+        ...
+    TypeError: Each row of the matrix must have the same size
+
+

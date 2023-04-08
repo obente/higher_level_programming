@@ -27,12 +27,20 @@ Usage
     My name is Bob 
 
 
-Test that firstname or lastname contains only string type
-=========================================================
+Test that firstname contains only str type
+=============================================
 
     >>> print(say_my_name(12, 'White'))
     Traceback (most recent call last):
         ...
-    TypeError: first_name must be a string or last_name must be a string
+    TypeError: first_name must be a string
 
+
+Test that lastname contains only str type
+=============================================
+
+    >>> print(say_my_name('Jane', 12))
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
 

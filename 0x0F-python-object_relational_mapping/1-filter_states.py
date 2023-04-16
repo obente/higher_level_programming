@@ -12,7 +12,8 @@ def main():
                          db=argv[3], host='localhost', port=3306)
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%';")
+    cur.execute("""SELECT * FROM states WHERE UPPER(
+                SUBSTR(name, 1, 1)) LIKE 'N%';""")
     states = cur.fetchall()
 
     for data in states:
